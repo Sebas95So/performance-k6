@@ -15,7 +15,7 @@ https://fakestoreapi.com/auth/login
 
 ## 2. TECNOLOGÍAS Y VERSIONES
 
-- Sistema operativo utilizado: Ubuntu Linux.
+- Sistemas operativos compatibles: Ubuntu Linux, Windows y macOS.
 - Herramienta de pruebas de carga: Grafana k6 v2.3.0.
 - Lenguaje del script: JavaScript compatible con k6.
 - Formato de datos de entrada: CSV.
@@ -33,7 +33,7 @@ performance-k6/
 │   ├── resultado.json
 │   └── resultado_final.json
 ├── script.js
-├── readme.txt
+├── README.md
 └── conclusiones.txt
 ```
 
@@ -149,7 +149,13 @@ Contiene las métricas detalladas de una ejecución anterior.
 
 **results/resultado_final.json:**
 
-Contiene las métricas de la ejecución guardada mediante el comando de la sección 7.
+Contiene las métricas detalladas de una ejecución guardada mediante la opción de exportación de resultados de k6.
+
+Para guardar los resultados de una nueva ejecución en formato JSON:
+
+```bash
+k6 run --out json=results/resultado_final.json script.js
+```
 
 Los resultados permiten revisar las métricas y respaldar las conclusiones documentadas en conclusiones.txt.
 
