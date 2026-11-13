@@ -57,19 +57,23 @@ k6 version
 
 La versión utilizada para desarrollar y ejecutar esta prueba fue k6 v2.3.0.
 
-## 5. INSTALACIÓN DE K6 EN UBUNTU
+## 5. INSTALACIÓN DE K6
 
-Si k6 no está instalado, consultar las instrucciones oficiales de instalación para Ubuntu/Debian:
+Consultar la documentación oficial de Grafana k6 para instalar la herramienta según el sistema operativo:
 
 https://grafana.com/docs/k6/latest/set-up/install-k6/
 
-Seguir las instrucciones para configurar el repositorio oficial e instalar k6.
+- **Ubuntu / Debian:** instalar mediante el repositorio oficial de Grafana.
+- **Windows:** instalar mediante Chocolatey o descargar el binario oficial.
+- **macOS:** instalar mediante Homebrew.
 
 Después de la instalación, verificar la versión con:
 
 ```bash
 k6 version
 ```
+
+La versión utilizada para desarrollar y ejecutar esta prueba fue k6 v2.3.0.
 
 Para reproducir los resultados originales, utilizar la misma versión de k6 empleada en la ejecución de referencia: v2.3.0.
 
